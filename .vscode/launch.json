@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Frontend",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/finance-frontend-master/node_modules/@angular/cli/bin/ng",
+      "args": ["serve"],
+      "cwd": "${workspaceFolder}/finance-frontend-master",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Launch Backend",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Start Backend",
+      "program": "${workspaceFolder}/finance-backend/bin/Debug/net9.0/finance-backend.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/finance-backend",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    }
+  ]
+}

@@ -30,3 +30,4 @@
 /Users/josephlawter/Documents/Finances App/finance-backend/obj/Debug/net9.0/finance-backend.pdb
 /Users/josephlawter/Documents/Finances App/finance-backend/obj/Debug/net9.0/finance-backend.genruntimeconfig.cache
 /Users/josephlawter/Documents/Finances App/finance-backend/obj/Debug/net9.0/ref/finance-backend.dll
+/Users/josephlawter/Documents/Finances App/finance-backend/obj/Debug/net9.0/finance-backend.sourcelink.json
