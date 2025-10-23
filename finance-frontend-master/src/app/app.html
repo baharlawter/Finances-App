@@ -1,0 +1,69 @@
+<header class="app-header">
+  <nav class="navbar">
+    <!-- Logo/Brand -->
+    <div class="nav-brand">
+      <h1>{{ title }}</h1>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="nav-links desktop-nav">
+      <li class="nav-item">
+        <a routerLink="/blogs" routerLinkActive="active">Financial Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/calculator" routerLinkActive="active">Calculator</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="dropdown-toggle">Tools ▼</a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/calculator">Calculator</a></li>
+          <li><a routerLink="/budget">Budget Planner</a></li>
+          <li><a routerLink="/investments">Investment Tracker</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="dropdown-toggle">Resources ▼</a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/blogs">Blog Posts</a></li>
+          <li><a routerLink="/guides">Financial Guides</a></li>
+          <li><a routerLink="/tips">Money Tips</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" (click)="toggleMenu()">
+      <span class="hamburger-line" [class.open]="inMenuOpen"></span>
+      <span class="hamburger-line" [class.open]="inMenuOpen"></span>
+      <span class="hamburger-line" [class.open]="inMenuOpen"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation (Expandable) -->
+  <div class="mobile-nav" [class.open]="inMenuOpen">
+    <ul class="mobile-nav-links">
+      <li><a routerLink="/blogs" (click)="toggleMenu()">Financial Blogs</a></li>
+      <li><a routerLink="/calculator" (click)="toggleMenu()">Calculator</a></li>
+      <li class="mobile-dropdown">
+        <span class="mobile-dropdown-title">Tools</span>
+        <ul class="mobile-dropdown-menu">
+          <li><a routerLink="/calculator" (click)="toggleMenu()">Calculator</a></li>
+          <li><a routerLink="/budget" (click)="toggleMenu()">Budget Planner</a></li>
+          <li><a routerLink="/investments" (click)="toggleMenu()">Investment Tracker</a></li>
+        </ul>
+      </li>
+      <li class="mobile-dropdown">
+        <span class="mobile-dropdown-title">Resources</span>
+        <ul class="mobile-dropdown-menu">
+          <li><a routerLink="/blogs" (click)="toggleMenu()">Blog Posts</a></li>
+          <li><a routerLink="/guides" (click)="toggleMenu()">Financial Guides</a></li>
+          <li><a routerLink="/tips" (click)="toggleMenu()">Money Tips</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>

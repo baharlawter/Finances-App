@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lG8d/AxBiRM=",
+  "success": true,
+  "projectFilePath": "/Users/josephlawter/Documents/Finances App/finance-backend/finance-backend.csproj",
+  "expectedPackageFiles": [
+    "/Users/josephlawter/.nuget/packages/microsoft.aspnetcore.openapi/9.0.10/microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "/Users/josephlawter/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
