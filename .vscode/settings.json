@@ -1,0 +1,14 @@
+{
+  "actionButtons.commands": [
+    {
+      "name": "Frontend",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Start Frontend"
+    },
+    {
+      "name": "Backend",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Start Backend"
+    }
+  ]
+}
