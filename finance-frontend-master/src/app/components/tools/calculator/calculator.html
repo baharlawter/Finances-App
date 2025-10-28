@@ -1,1 +1,10 @@
-<p>calculator works!</p>
+<div>Calculate Your Total Debt With Interest</div>
+<label>Write your Principal</label>
+<input id="principal" type="number" [(ngModel)]="principal" placeholder="Enter principal amount" />
+<label>Write your Interest Rate</label>
+<input id="rate" type="number" [(ngModel)]="rate" placeholder="Enter your interest rate" />
+
+<label>Write your Time Period</label>
+<input id="time" type="number" [(ngModel)]="time" placeholder="Enter number of years" />
+<button (click)="calculate()">Calculate Result</button>
+<h2>Total debt you have ${{ result }}</h2>
